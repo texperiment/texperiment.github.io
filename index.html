@@ -1,1 +1,800 @@
-hello 
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>武汉美团网</title>
+<link rel="stylesheet" href=".demo.css">
+</head>
+
+<body>
+	<div class="wrapper">
+    	
+        <!-- 头部导航栏 -->
+    	<div class="top">
+        	<ul class="top-l">
+            <li>
+           <span><img src="素材/地理位置图标.jpg"></span>
+            <span>武汉</span>
+            <span>|</span>
+            <span>切换城市</span>
+   
+            <li class="top-w">
+            <a href="#">立即登陆</a>
+            </li>
+            <li>
+            <a href="#">注册</a>
+            </li>
+            </ul>
+            
+            <ul class="top-r">
+            <li>
+            <a href="#">我的美团</a>
+            </li>
+            <li>
+            <a href="#">手机APP</a>
+            </li>
+            <li>
+            <a href="#">商家中心</a>
+            </li>
+            <li>
+            <a href="#">网页导航</a>
+            </li>
+            </ul>
+        </div>
+        <!--搜索区-->
+        <div class="so">
+        	<div class="soso">
+            	<div class="logo-box"></div>
+                <div class="search-box">
+                	
+                    <div class="search-t">
+                    	<div class="search-penel">
+                        	<form action="">
+                            	<div class="btn">
+                                	<button class="submit">搜索</button>
+                                </div>
+                                <div class="search-inp-box">
+                                	<div class="search-inp">
+                                    	<input type="text" placeholder="搜索商家或地点">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="search-bl">
+                    	<a href="#">武汉欢乐谷</a>
+                        <a href="#">武汉失恋博物馆</a>
+                        <a href="#">武汉海昌极地海洋公园</a>
+                        <a href="#">黄鹤楼</a>
+                        <a href="#">武汉木兰草原风景区</a>
+                        <a href="#">花博会</a>
+                    </div>
+                </div>
+                </div>
+       <div class="s">
+       	<a href="#">美团外卖</a>
+        <a href="#">猫眼电影</a>
+        <a href="#">美团酒店</a>
+        <a href="#">民宿/公寓</a>
+        <a href="#">商家入驻</a>
+        <a href="#">美团公益</a>
+       </div>
+         
+        </div>
+      
+       
+        <!--目录区-->
+		<div class="nav">
+        
+        
+        <!--主类第一板块-->
+        <div class="main">
+        
+         	<!--左侧列表-->
+        	<div class="main-list">
+            	<div class="main-list-t"><div>全部分类</div></div>
+                <div class="main-list-s">
+                	<ul>
+                    	<li><a href="#">美食</a><span></span></li>
+                        <li><a href="#">外卖</a><span></span></li>
+                        <li><a href="#">酒店</a><span></span></li>
+                        <li><a href="#">榛果民宿</a><span></span></li>
+                        <li><a href="#">猫眼电影</a><span></span></li>
+                        <li><a href="#">机票 / 火车票</a><span></span></li>
+                        <li><a href="#">休闲娱乐 / KTV</a><span></span></li>
+                        <li><a href="#">生活服务</a><span></span></li>
+                        <li><a href="#">丽人 / 美发 / 医学美容</a><span></span></li>
+                        <li><a href="#">结婚 / 婚纱摄影 / 婚宴</a><span></span></li>
+                        <li><a href="#">亲子 / 儿童乐园 / 幼教</a><span></span></li>
+                        <li><a href="#">运动健身 / 健身中心</a><span></span></li>
+                        <li><a href="#">家装 / 建材 / 家居</a><span></span></li>
+                        <li><a href="#">医疗健康 / 宠物 / 爱车</a><span></span></li>
+        
+                    </ul>
+                </div>
+            </div>
+            
+           <!-- 右图片区-->
+            <div class="main-pho">
+            
+            <!--右上-->
+            	<div class="main-pho-s">
+                
+                
+                
+                
+                <!--轮播图--><!----><!----><!----><!---->  <!---->  <!---->    <!---->     <!---->
+                
+                
+                
+                
+                 <div id="one">
+                      
+                     <div id="imglist">
+                         <a href="#"><img src="./素材/1.jpg" alt=""></a>
+                         <a href="#"><img src="./素材/2.jpg" alt=""></a>
+                         <a href="#"><img src="./素材/3.jpg" alt=""></a>
+                     </div>
+                     <ul id="iconlist">
+                         <li>1</li>
+                         <li>2</li>
+                         <li>3</li>
+                     </ul>
+                    
+                  </div>  
+                     
+
+                  <script>
+                      var   imgs=document.getElementById("imglist").getElementsByTagName("a");
+                      var  icons=document.getElementById("iconlist").getElementsByTagName("li");
+                      var div=document.getElementById("one");
+                      //设置循环变量
+                      var m=0;
+                      //设置定时器
+                      var timer=setInterval(run,2000);
+                      //循环函数
+                      function run(){
+                          if(m>=3){
+                              m=0;
+                          }
+                          controlimg(m);
+                          //控制图标
+                          controlicon(m);
+                          m++;
+
+                      }
+                      //定义函数控制图片
+                      function controlimg(n){
+                          for(var i=0;i<imgs.length;i++){
+                              imgs[i].style.display="none";
+                             }
+                             //显示指定图片
+                        imgs[n].style.display="block";
+                      }
+                      function controlicon(n){
+                        for(var i=0;i<icons.length;i++){
+                              icons[i].style.backgroundColor="#fff";
+                             }
+                             icons[n].style.backgroundColor="#13d1be";
+                      }
+                      //鼠标悬停
+                      div.onmouseover=function(){
+                          //停止定时器
+                        clearInterval(timer);
+                      }
+                      //鼠标移位
+                      div.onmouseout=function(){
+                          timer=setInterval(run,1000);
+                      }
+                      //给图标绑定事件
+                      for(var i=0;i<icons.length;i++){
+                          (function(i){
+                              icons[i].onmouseover=function(){
+                                  controlimg(i);
+                                  controlicon(i);
+                                  m=i+1;
+                              }
+                          })(i)
+                      }
+
+
+                  </script>
+                     
+                <!----><!----> <!----><!----><!----><!----><!----><!----><!---->
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     <div class="two"></div>
+                     <div class="three">
+                     	<div class="three-o">
+                     		<div></div>
+                     	</div>
+                     	<div class="three-t">
+                     		<a>Hi！你好</a>
+                     	</div>
+                     	<div class="three-s">
+                     		<div class="register">
+                     			<button class="submit">注册</button>
+                     		</div>
+                     	</div>
+                     	<div class="three-f">
+                     		<div class="enroll">
+                     			<button class="submit">立即登录</button>
+                     		</div>
+                     	</div>
+                     </div>
+                </div>
+                
+            <!--右下-->
+                <div class="main-pho-x">
+                	<div class="o"></div>
+                    <div class="t"></div>
+                    <div class="s"></div>
+                    <div class="f">
+                    	<div class="f-s">
+                        	<div></div>
+                        </div>
+                        <div class="f-o"><div>美团APP手机版</div></div>
+      
+                        <div class="f-x">
+                        <p><span class="f-x-l">一元起</span><span class="f-x-r">吃喝玩乐</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div><!--main-->
+        
+         <div class="xo">
+        
+        
+        
+        
+        
+        
+        
+        
+          <div class="tab-box">
+      <div class="tab-head">
+        <div class="tab-head-div current">全部分类</div>
+        <div class="tab-head-div">约会聚餐</div>
+        <div class="tab-head-div">丽人SPA</div>
+        <div class="tab-head-div tab-head-r">美团酒店</div>
+      </div>
+      <!--jkdjfk?-->
+      <div class="tab-body">
+        <div class="tab-body-div current"> 
+        	<div class="a">
+            	
+                
+                
+                
+                
+                
+            
+            	<div class="a-s">
+               	
+                	<div class="a-s-one">
+                    	<div class="a-s-one-t">
+                        	<div class="one-photo"></div>
+                            <div class="one-title"><a>YESIDO椰岛造型 （水岸国际店）</a></div>
+                            <div class="one-syn"><a>YESIDO椰岛造型 （水岸国际店）</a></div>
+                            <div class="one-price">
+                            	<div class="one-price-l"><a>&yen;149/人均</a></div>
+                                <div class="one-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-s-two">
+                    	<div class="a-s-two-t">
+                        	<div class="two-photo"></div>
+                            <div class="two-title"><a>淇·遇（水岸国际店）</a></div>
+                            <div class="two-syn"><a>淇·遇（水岸国际店）</a></div>
+                            <div class="two-price">
+                            	<div class="two-price-l"><a>&yen;113/人均</a></div>
+                                <div class="two-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-s-three">
+                    	<div class="a-s-three-t">
+                        	<div class="three-photo"></div>
+                            <div class="three-title"><a>万达影城（菱角湖万达广场店）</a></div>
+                            <div class="three-syn"><a>万达影城（菱角湖万达广场店）</a></div>
+                            <div class="three-price">
+                            	<div class="three-price-l"><a>&yen;48/人均</a></div>
+                                <div class="three-price-r"><a>菱角湖万达广场</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+                
+                
+                <div class="a-x">
+                
+                	<div class="a-x-one">
+                    	<div class="a-x-one-t">
+                        	<div class="one-photo"></div>
+                            <div class="one-title"><a>必胜客（徐东大道店）</a></div>
+                            <div class="one-syn"><a>【重磅拼盘饮料组合A012】</a></div>
+                            <div class="one-price">
+                            	<div class="one-price-l"><a>&yen;88</a></div>
+								<div class="one-price-o"><a>门市价:&yen;113</a></div>
+                                <div class="one-price-r"><a>徐东大街</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-x-two">
+                    	<div class="a-x-two-t">
+                        	<div class="two-photo"></div>
+                            <div class="two-title"><a>皇冠蛋糕（江汉路店）</a></div>
+                            <div class="two-syn"><a>蛋糕10</a></div>
+                            <div class="two-price">
+                            	<div class="two-price-l"><a>&yen;161</a></div>
+                               <div class="two-price-o"><a>门市价:&yen;179</a></div>
+                                <div class="two-price-r"><a>徐东大街</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-x-three">
+                    	<div class="a-x-three-t">
+                        	<div class="three-photo"></div>
+                            <div class="three-title"><a>元祖食品（徐东店）</a></div>
+                            <div class="three-syn"><a>慕斯蛋糕8寸，一个</a></div>
+                            <div class="three-price">
+                            	<div class="three-price-l"><a>&yen;278</a></div>
+                               <div class="three-price-o"><a>门市价:&yen;198</a></div>
+                                <div class="three-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+          
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+        <div class="tab-body-div"> 
+        	
+            
+            
+            	<div class="b">
+            	
+                
+                
+                
+                
+                
+            
+            	<div class="a-s">
+               	
+                	<div class="a-s-one">
+                    	<div class="a-s-one-t">
+                        	<div class="one-photo"></div>
+                            <div class="one-title"><a>必胜客（公安路店）</a></div>
+                            <div class="one-syn"><a>一人份重磅拼盘，两份葡萄柚</a></div>
+                            <div class="one-price">
+                            	<div class="one-price-l"><a>&yen;149/人均</a></div>
+                                <div class="one-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-s-two">
+                    	<div class="a-s-two-t">
+                        	<div class="two-photo"></div>
+                            <div class="two-title"><a>华记酒楼海鲜烧烤（武昌总店）</a></div>
+                            <div class="two-syn"><a>三个人把老板吃哭了</a></div>
+                            <div class="two-price">
+                            	<div class="two-price-l"><a>&yen;130/人均</a></div>
+                                <div class="two-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-s-three">
+                    	<div class="a-s-three-t">
+                        	<div class="three-photo"></div>
+                            <div class="three-title"><a>嘿啪酒鬼食堂场店）</a></div>
+                            <div class="three-syn"><a>豪华烧烤，免费提供wifi</a></div>
+                            <div class="three-price">
+                            	<div class="three-price-l"><a>&yen;100/人均</a></div>
+                                <div class="three-price-r"><a>菱角湖万达广场</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+                
+                
+                <div class="a-x">
+                
+                	<div class="a-x-one">
+                    	<div class="a-x-one-t">
+                        	<div class="one-photo"></div>
+                            <div class="one-title"><a>必胜客（徐东大道店）</a></div>
+                            <div class="one-syn"><a>【重磅拼盘饮料组合A012】</a></div>
+                            <div class="one-price">
+                            	<div class="one-price-l"><a>&yen;88</a></div>
+								<div class="one-price-o"><a>门市价:&yen;113</a></div>
+                                <div class="one-price-r"><a>徐东大街</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-x-two">
+                    	<div class="a-x-two-t">
+                        	<div class="two-photo"></div>
+                            <div class="two-title"><a>皇冠蛋糕（江汉路店）</a></div>
+                            <div class="two-syn"><a>蛋糕10</a></div>
+                            <div class="two-price">
+                            	<div class="two-price-l"><a>&yen;161</a></div>
+                               <div class="two-price-o"><a>门市价:&yen;179</a></div>
+                                <div class="two-price-r"><a>徐东大街</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-x-three">
+                    	<div class="a-x-three-t">
+                        	<div class="three-photo"></div>
+                            <div class="three-title"><a>韩国料理</a></div>
+                            <div class="three-syn"><a>好吃不贵</a></div>
+                            <div class="three-price">
+                            	<div class="three-price-l"><a>&yen;66</a></div>
+                               <div class="three-price-o"><a>门市价:&yen;166</a></div>
+                                <div class="three-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+               
+         </div>
+            
+            
+            
+            
+        </div>
+        <div class="tab-body-div"> 
+        	
+            
+            
+            
+            <div class="c">
+            	
+                
+                
+                
+                
+                
+            
+            	<div class="a-s">
+               	
+                	<div class="a-s-one">
+                    	<div class="a-s-one-t">
+                        	<div class="one-photo"></div>
+                            <div class="one-title"><a>YESIDO椰岛造型 （水岸国际店）</a></div>
+                            <div class="one-syn"><a>YESIDO椰岛造型 （水岸国际店）</a></div>
+                            <div class="one-price">
+                            	<div class="one-price-l"><a>&yen;149/人均</a></div>
+                                <div class="one-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-s-two">
+                    	<div class="a-s-two-t">
+                        	<div class="two-photo"></div>
+                            <div class="two-title"><a>古功夫肩颈（常青南园店）</a></div>
+                            <div class="two-syn"><a>古功夫肩颈（常青南园店）</a></div>
+                            <div class="two-price">
+                            	<div class="two-price-l"><a>&yen;113/人均</a></div>
+                                <div class="two-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-s-three">
+                    	<div class="a-s-three-t">
+                        	<div class="three-photo"></div>
+                            <div class="three-title"><a>YESIDO椰岛美容（光谷新天地店）</a></div>
+                            <div class="three-syn"><a>YESIDO椰岛美容（光谷新天地店）</a></div>
+                            <div class="three-price">
+                            	<div class="three-price-l"><a>&yen;99/人均</a></div>
+                                <div class="three-price-r"><a>菱角湖万达广场</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+                
+                
+                <div class="a-x">
+                
+                	<div class="a-x-one">
+                    	<div class="a-x-one-t">
+                        	<div class="one-photo"></div>
+                            <div class="one-title"><a>高端日式美甲美睫</a></div>
+                            <div class="one-syn"><a>高端日式美甲美睫</a></div>
+                            <div class="one-price">
+                            	<div class="one-price-l"><a>&yen;299</a></div>
+								<div class="one-price-o"><a>门市价:&yen;599</a></div>
+                                <div class="one-price-r"><a>徐东大街</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-x-two">
+                    	<div class="a-x-two-t">
+                        	<div class="two-photo"></div>
+                            <div class="two-title"><a>歌德丝发型工作室</a></div>
+                            <div class="two-syn"><a>歌德丝发型工作室</a></div>
+                            <div class="two-price">
+                            	<div class="two-price-l"><a>&yen;99</a></div>
+                               <div class="two-price-o"><a>门市价:&yen;179</a></div>
+                                <div class="two-price-r"><a>徐东大街</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-x-three">
+                    	<div class="a-x-three-t">
+                        	<div class="three-photo"></div>
+                            <div class="three-title"><a>跳动全城舞蹈培训</a></div>
+                            <div class="three-syn"><a>跳动全城舞蹈培训</a></div>
+                            <div class="three-price">
+                            	<div class="three-price-l"><a>&yen;2199</a></div>
+                               <div class="three-price-o"><a>门市价:&yen;3199</a></div>
+                                <div class="three-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+               
+         </div>
+            
+            
+            
+        </div>
+        <div class="tab-body-div"> 
+        	
+            
+            
+            
+            <div class="d">
+            	
+                
+                
+                
+                
+                
+            
+            	<div class="a-s">
+               	
+                	<div class="a-s-one">
+                    	<div class="a-s-one-t">
+                        	<div class="one-photo"></div>
+                            <div class="one-title"><a>武汉天际丽豪大酒店</a></div>
+                            <div class="one-syn"><a>武汉天际丽豪大酒店</a></div>
+                            <div class="one-price">
+                            	<div class="one-price-l"><a>&yen;382/人均</a></div>
+                                <div class="one-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-s-two">
+                    	<div class="a-s-two-t">
+                        	<div class="two-photo"></div>
+                            <div class="two-title"><a>纽宾凯光谷国际酒店</a></div>
+                            <div class="two-syn"><a>纽宾凯光谷国际酒店</a></div>
+                            <div class="two-price">
+                            	<div class="two-price-l"><a>&yen;300/人均</a></div>
+                                <div class="two-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-s-three">
+                    	<div class="a-s-three-t">
+                        	<div class="three-photo"></div>
+                            <div class="three-title"><a>武汉汇豪大酒店</a></div>
+                            <div class="three-syn"><a>武汉汇豪大酒店</a></div>
+                            <div class="three-price">
+                            	<div class="three-price-l"><a>&yen;437/人均</a></div>
+                                <div class="three-price-r"><a>菱角湖万达广场</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+                
+                
+                <div class="a-x">
+                
+                	<div class="a-x-one">
+                    	<div class="a-x-one-t">
+                        	<div class="one-photo"></div>
+                            <div class="one-title"><a>武汉锦江国际大酒店</a></div>
+                            <div class="one-syn"><a>武汉锦江国际大酒店</a></div>
+                            <div class="one-price">
+                            	<div class="one-price-l"><a>&yen;568</a></div>
+								<div class="one-price-o"><a>门市价:&yen;899</a></div>
+                                <div class="one-price-r"><a>徐东大街</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-x-two">
+                    	<div class="a-x-two-t">
+                        	<div class="two-photo"></div>
+                            <div class="two-title"><a>武汉光谷希尔顿酒店</a></div>
+                            <div class="two-syn"><a>武汉光谷希尔顿酒店</a></div>
+                            <div class="two-price">
+                            	<div class="two-price-l"><a>&yen;700</a></div>
+                               <div class="two-price-o"><a>门市价:&yen;999</a></div>
+                                <div class="two-price-r"><a>徐东大街</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="a-x-three">
+                    	<div class="a-x-three-t">
+                        	<div class="three-photo"></div>
+                            <div class="three-title"><a>武汉万达瑞华酒店</a></div>
+                            <div class="three-syn"><a>武汉万达瑞华酒店</a></div>
+                            <div class="three-price">
+                            	<div class="three-price-l"><a>&yen;1355</a></div>
+                               <div class="three-price-o"><a>门市价:&yen;1666</a></div>
+                                <div class="three-price-r"><a>和平大道积玉桥</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+               
+         </div>
+            
+            
+            
+            
+            
+            
+        </div>
+      </div>
+    </div>
+    <script>
+      // 获取标签栏的所有标签元素对象
+      var tabs = document.getElementsByClassName('tab-head-div');
+      // 获取标签栏的所有内容对象
+      var divs = document.getElementsByClassName('tab-body-div');
+     
+		for(var i=0;i<tabs.length;i++){
+			tabs[i].onmouseover=function(){
+			for(var j=0;j<divs.length;j++){
+				if(tabs[j]==this){
+					tabs[j].classList.add("current");
+					divs[j].classList.add("current");
+					
+				}
+				else{
+					tabs[j].classList.remove("current");
+					divs[j].classList.remove("current");
+					//
+				}
+			}
+		}
+		}
+		
+		
+    </script>
+        
+        
+        
+        
+         <!--美团页尾-->
+		<div class="end">
+         	<div class="end-o">
+           		 <ul>
+            			<li class="end-ol">用户帮助</li>
+                        <li>退款申请</li>
+                        <li>查看卷码</li>
+                        <li>常见问题</li>
+                        <li>用户协议</li>
+                        <li>隐私政策</li>
+                        <li>反诈骗</li>
+           		 </ul>
+            </div>
+            <div class="end-t">
+            	 <ul>
+            			<li class="end-ol">商家合作</li>
+                        <li>商家入驻</li>
+                        <li>开店申请</li>
+                        <li>收银官网</li>
+                        <li>外卖配送</li>
+                        <li>酒店入驻</li>
+                        <li>开票申请</li>
+                        <li>美团点评</li>
+                        <li>快驴合作</li>
+           		 </ul>
+            </div>
+            <div class="end-s">
+            	 <ul>
+            			<li class="end-ol">代理加盟</li>
+                        <li>代理商招募</li>
+                        <li>美团联盟</li>
+                        <li>收银分销商</li>
+                        <li>点评服务商招募</li>
+                        <li>渠道代理</li>
+                 </ul>
+            </div>
+            <div class="end-f">
+            	 <ul>
+            			<li class="end-ol">消费者服务热线</li>
+                        <li>外卖消费者:10109777</li>
+                        <li>猫眼消费者:10105335</li>
+                        <li>其他消费者:10107888</li>
+                        <li></li>
+                        <li>商家服务热线</li>
+                        <li>外卖商家:10105557</li>
+                        <li>其他商家:10100107</li>
+                        <li>举报电话:4006018900</li>
+           		 </ul>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        
+        </div><!--nav-->
+       
+        
+        
+        
+        
+        
+      
+        
+    </div>
+</body>
+</html>
