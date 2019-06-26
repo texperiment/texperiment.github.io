@@ -1,0 +1,1916 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+}
+html,body{
+	width:100%;
+	height:100%;
+	background-color:#F6F6F6;/*背景颜色*/
+	color:#3c3c3c;/*默认字体颜色*/
+}
+.wrapper{
+	width:100%;
+	height:100%;
+}
+
+/*第一块-头部导航栏*/
+.wrapper .top{			
+	width:100%;
+	height:30px;
+	font-size:12px;
+	width:960px;
+	margin:0 auto;
+	/*overflow-x:hidden  横向滚动条消失*/
+	}
+.wrapper .top .top-l{
+	float:left;
+	
+	}
+.wrapper .top .top-r{
+	float:right;}
+
+.wrapper .top ul li{
+	float:left;
+	margin-right:20px;
+	display:inline-block;
+}
+
+.wrapper .top a{
+	color:#6c6c6c;
+	font-size:12px;
+	line-height:25px;		/*文字竖直居中*/
+}
+
+.wrapper .top span{
+	line-height:25px;
+	color:#141414;
+}
+
+/*设置立即登陆颜色*/
+.wrapper .top .top-l .top-w a{
+	color:#13bbac;
+}
+
+/*鼠标移动变色*/
+.wrapper .top a:hover{
+	color:#31bbac;
+}
+
+	
+/*第二块-搜搜*/
+.wrapper .so {
+	background-color:#FFF;
+	width:100%;
+	height:150px;
+	}
+.wrapper .so .soso{
+	width:940px;
+	height:105px;
+	margin:0 auto;}
+.wrapper .so .soso .logo-box{
+	position:relative;/*基于自身定位*/
+	
+	display:inline-block;
+	height:60px;
+	width:160px;
+	background-image:url('./素材/美团.png');
+	background-size:100% 100%;
+	margin-top:33px;
+	float:left;}
+
+
+
+.wrapper .so .soso .search-box{
+	display:inline-block;
+	width:420px;
+	height:65px;
+	margin-left:104px;/*距离美团图标104px*/
+	float:left;}
+
+.wrapper .so .soso .search-box .search-t{
+	width:520px;
+	height:40px;
+	position:relative;/*基于自身定位*/
+	bottom:-35px;}
+
+.wrapper .so .soso .search-box .search-t .search-penel{
+	position:relative;}
+	
+.wrapper .so .soso .search-box .search-penel form .btn{
+	height:40px;
+	width:16%;
+	position:absolute;
+	top:0;
+	right:0;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	overflow:hidden;}
+.wrapper .so .soso .search-box .search-penel .btn button{
+	border:none;
+	height:100%;
+	width:100%;
+	background-color:#13d1be;
+	color:#fff;
+	font-weight:500;
+	font-size:18px;}
+
+.wrapper .so .soso .search-box .search-penel .search-inp-box{
+	width:84%;
+	height:36px;
+	border:2px solid #13d1be;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	overflow:hidden;}
+	
+.wrapper .so .soso .search-box .search-penel .search-inp{
+	height:38px;
+	width:100%}
+	
+.wrapper .so .soso .search-box .search-penel .search-inp input{
+	height:25px;
+	width:100%;
+	padding:6px 16px;
+	font-size:14px;
+	color:#999;
+	border:none;}
+
+.wrapper .so .soso .search-box .search-bl{
+	width:520px;
+	height:25px;
+	position:relative;/*基于自身定位*/
+	bottom:-40px;}
+	
+.wrapper .so .soso .search-box .search-bl a{
+	font-size:10px;
+	margin-right:4px;
+	color:#999;}
+.wrapper .so .soso .search-box .search-bl a:hover{
+	color:#31bbac;}
+
+.wrapper .so .s{
+	width:600px;
+	height:40px;
+	margin-left:31%;
+	padding-top:20px;
+	}
+.wrapper .so .s a{
+	font-size:16px;
+	font-weight:700;
+	color:#000;
+	margin-left:28px;}
+
+.wrapper .so .s a:hover{
+	color:#F00;}
+	
+	
+	
+/*第三大块-商品*/
+.wrapper .nav{			
+	width:1100px;
+	height:1500px;
+	margin:0 auto;		/*居中*/				/*绿色背景*/
+	
+	}
+
+
+.wrapper .nav .main{
+	width:1100px;
+	height:400px;}
+
+
+.wrapper .nav .main .main-list{
+	width:228px;
+	height:400px;
+	float:left;
+	background-color:#13d1be;
+	overflow:hidden;
+}
+.wrapper .nav .main .main-list .main-list-t{
+	height:40px;
+	width:100%;}
+.wrapper .nav .main .main-list .main-list-t div{
+	height:100%
+	font-size:18px;
+	color:#fff;
+	font-weight:600;
+	padding-top:12px;
+	
+	margin-left:15px;
+	margin-top:auto;}
+.wrapper .nav .main .main-list .main-list-s{
+	width:100%;
+	height:400px;
+	border:none;}
+
+.wrapper .nav .main .main-list .main-list-s ul li{
+	height:25.3px;
+	padding-left:15px;
+	position:relative;}
+	
+.wrapper .nav .main .main-list .main-list-s ul li a{
+	font-size:12px;
+	color:#fff;
+	font-weight:600;}
+
+.wrapper .nav .main .main-list .main-list-s ul li span{
+	height:25px;
+	width:10px;
+	display:inline-block;
+	float:right;
+	background:url('./素材/箭头.jpg');
+	background-size:100% 100%;}
+	
+.wrapper .nav .main .main-list .main-list-s ul li:hover{
+	background-color:#0CD8C9;}
+
+
+.wrapper .nav .main .main-pho{
+	width:860px;
+	height:400px;
+	float:right;}
+
+.wrapper .nav .main .main-pho .main-pho-s{
+	margin-top:8px;
+	width:860px;
+	height:215px;}
+	
+	
+	
+
+	
+/*轮播图*//*----------------------------------------------*/
+.wrapper .nav .main .main-pho .main-pho-s #one{
+	width:450px;
+	height:213px;
+	float:left;
+	padding: 0px;
+    position: relative;
+	overflow:hidden;
+	position: relative;
+}
+
+#imglist{
+	width: 450px;
+	height: 213px;
+}
+#imglist a{
+	display: none;
+}
+#iconlist{
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}
+#iconlist li{
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	float: left;
+	margin-left: 5px;
+	background-color: #999;
+	border-radius: 50%;
+	cursor: pointer;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+.wrapper .nav .main .main-pho .main-pho-s .two{
+	width:150px;
+	height:215px;
+	float:left;
+	margin-left:8px;
+	background-image:url('./素材/右上2.jpg');
+	background-size:100% 100%;}
+	
+.wrapper .nav .main .main-pho .main-pho-s .three{
+	width:230px;
+	height:215px;
+	float:left;
+	margin-left:8px;
+	background-color: #fff;}
+
+.wrapper .nav .main .main-pho .main-pho-s .three .three-o{
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+	
+}
+.wrapper .nav .main .main-pho .main-pho-s .three .three-o div{
+	width: 50px;
+	height: 50px;
+	margin-left: 90px;
+	
+	background:url(素材/右上3-1.jpg);
+	background-size:100% 100%;
+}
+
+.wrapper .nav .main .main-pho .main-pho-s .three .three-t{
+	width: 100%;
+	height: 20px;
+	margin-top: 10px;
+}
+.wrapper .nav .main .main-pho .main-pho-s .three .three-t a{
+	font-size: 16px;
+	font-weight: 500;
+	color: #222;
+	margin-left: 36%;
+}
+
+.wrapper .nav .main .main-pho .main-pho-s .three .three-s{
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+	
+}
+.wrapper .nav .main .main-pho .main-pho-s .three .three-s .register{
+	width: 115px;
+	height: 40px;
+	border: 1px solid #000;
+	margin-left: 57px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.wrapper .nav .main .main-pho .main-pho-s .three .three-s .register button{
+	width: 100%;
+	border: none;
+	height: 100%;
+	background-color:#fff;
+}
+.wrapper .nav .main .main-pho .main-pho-s .three .three-s .register button:hover{
+	background-color:#E1E1E1;}
+
+.wrapper .nav .main .main-pho .main-pho-s .three .three-f{
+	width: 100%;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.wrapper .nav .main .main-pho .main-pho-s .three .three-f .enroll{
+	width: 115px;
+	height: 40px;
+	border: 1px solid #000;
+	margin-left: 57px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.wrapper .nav .main .main-pho .main-pho-s .three .three-f .enroll button{
+	width: 100%;
+	border: none;
+	height: 100%;
+	background-color:#fff;
+}
+.wrapper .nav .main .main-pho .main-pho-s .three .three-f .enroll button:hover{
+	background-color:#e1e1e1;}
+
+.wrapper .nav .main .main-pho .main-pho-x{
+	width:860px;
+	height:175px;}
+	
+.wrapper .nav .main .main-pho .main-pho-x .o{
+	width:220px;
+	height:167px;
+	float:left;
+	margin-top:8px;
+	background-image:url('./素材/右下1.png');
+	background-size:100% 100%;}
+
+.wrapper .nav .main .main-pho .main-pho-x .t{
+	width:220px;
+	height:167px;
+	margin-left:8px;
+	float:left;
+	margin-top:8px;
+	background-image:url('./素材/右下2.jpg');
+	background-size:100% 100%;}
+.wrapper .nav .main .main-pho .main-pho-x .s{
+	width:150px;
+	height:167px;
+	float:left;
+	margin-left:10px;
+	margin-top:8px;
+	background-image:url('./素材/右下3.jpg');
+	background-size:100% 100%;}
+	
+.wrapper .nav .main .main-pho .main-pho-x .f{
+	margin-top:8px;
+	width:230px;
+	height:167px;
+	float:left;
+	margin-left:8px;
+	background-color:#fff;
+}
+.wrapper .nav .main .main-pho .main-pho-x .f .f-s{
+	width:230px;
+	height:80px;
+	margin-top:5px;
+	}
+.wrapper .nav .main .main-pho .main-pho-x .f .f-s div{
+	background-image:url('./素材/二维码.png');
+	background-size:100% 100%;
+	margin:0 auto;
+	width:80px;
+	height:80px;}
+.wrapper .nav .main .main-pho .main-pho-x .f .f-o{
+	width:230px;
+	height:33px;
+	margin-top:5px;
+	
+}
+.wrapper .nav .main .main-pho .main-pho-x .f .f-o div{
+	font-size:20px;
+	margin-left:50px;
+	}
+.wrapper .nav .main .main-pho .main-pho-x .f .f-x{
+	width:230px;
+	height:25px;
+	}
+.wrapper .nav .main .main-pho .main-pho-x .f .f-x .f-x-l{
+	color:#F00;
+	float:8px;
+	margin-left:55px;}
+	.wrapper .nav .main .main-pho .main-pho-x .f .f-x .f-x-r{
+	float:8px;
+	margin-left:5px;}
+
+
+
+
+/*第一大部分商品区*/
+.wrapper .nav .xo{
+	width:1100px;
+	height:700px;
+	margin-top:20px;}
+
+	
+.wrapper .nav .xo .tab-box{
+	width:1100px;
+	}
+	
+.wrapper .nav .xo .tab-head{
+	height:40px;
+	background-color:#9B9431;
+	padding-top:5px;
+	border-radius:50px;
+	padding-left:10px;}
+	
+.wrapper .nav .xo .tab-head-div{
+	width:80px;
+	height:40px;
+	line-height:30px;
+	cursor:pointer;				/*鼠标变成小手*/
+	color:#fff;
+	margin-left:10px;
+	float:left;}
+	
+.wrapper .nav .xo .tab-head .current{
+	color:#000;}
+
+
+	
+.wrapper .nav .xo .tab-head-r{
+	border-right:0;}
+	
+.wrapper .nav .xo .tab-body-div{
+	display:none;
+	 width:960px; 
+	 height:640px;}
+.wrapper .nav .xo .tab-body .current{
+	display:block;}
+	
+.wrapper .nav .xo .tab-body .a{
+	width:1100px;
+	height:640px;			
+	margin-top:10px;}
+	
+.wrapper .nav .xo .tab-body .a .a-s{
+	width:1100px;
+	height:300px;}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-one{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-one .a-s-one-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .a .a-s .a-s-one .a-s-one-t .one-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/椰岛造型.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-one .a-s-one-t .one-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-one .a-s-one-t .one-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-one .a-s-one-t .one-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-one .a-s-one-t .one-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .a .a-s .a-s-two{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-two .a-s-two-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .a .a-s .a-s-two .a-s-two-t .two-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/qiyu.png');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-two .a-s-two-t .two-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-two .a-s-two-t .two-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-two .a-s-two-t .two-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-two .a-s-two-t .two-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+
+.wrapper .nav .xo .tab-body .a .a-s .a-s-three{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-three .a-s-three-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .a .a-s .a-s-three .a-s-three-t .three-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/电影院.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-three .a-s-three-t .three-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-three .a-s-three-t .three-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-three .a-s-three-t .three-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-s .a-s-three .a-s-three-t .three-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+
+
+
+
+
+
+.wrapper .nav .xo .tab-body .a .a-x{
+	width:1100px;
+	height:300px;}
+
+.wrapper .nav .xo .tab-body .a .a-x .a-x-one{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-one .a-x-one-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .a .a-x .a-x-one .a-x-one-t .one-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/必胜客.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-one .a-x-one-t .one-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-one .a-x-one-t .one-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-one .a-x-one-t .one-price-l {
+	width:25px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-one .a-x-one-t .one-price-o {
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-one .a-x-one-t .one-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .a .a-x .a-x-two{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-two .a-x-two-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .a .a-x .a-x-two .a-x-two-t .two-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/皇冠蛋糕.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-two .a-x-two-t .two-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-two .a-x-two-t .two-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-two .a-x-two-t .two-price-l {
+	width:35px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-two .a-x-two-t .two-price-o{
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-two .a-x-two-t .two-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+	
+.wrapper .nav .xo .tab-body .a .a-x .a-x-three{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-three .a-x-three-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .a .a-x .a-x-three .a-x-three-t .three-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/蛋糕.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-three .a-x-three-t .three-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-three .a-x-three-t .three-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-three .a-x-three-t .three-price-l {
+	width:35px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-three .a-x-three-t .three-price-o{
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .a .a-x .a-x-three .a-x-three-t .three-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+	
+	
+	
+	
+	
+.wrapper .nav .xo .tab-body .b{
+	width:1100px;
+	height:640px;			
+	margin-top:10px;}
+	
+.wrapper .nav .xo .tab-body .b.a-s{
+	width:1100px;
+	height:300px;}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-one{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-one .a-s-one-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .b .a-s .a-s-one .a-s-one-t .one-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/必胜客.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-one .a-s-one-t .one-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-one .a-s-one-t .one-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-one .a-s-one-t .one-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-one .a-s-one-t .one-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .b .a-s .a-s-two{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-two .a-s-two-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .b .a-s .a-s-two .a-s-two-t .two-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/海鲜.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-two .a-s-two-t .two-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-two .a-s-two-t .two-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-two .a-s-two-t .two-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-two .a-s-two-t .two-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+	
+.wrapper .nav .xo .tab-body .b .a-s .a-s-three{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-three .a-s-three-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .b .a-s .a-s-three .a-s-three-t .three-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/烧烤.png');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-three .a-s-three-t .three-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-three .a-s-three-t .three-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-three .a-s-three-t .three-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-s .a-s-three .a-s-three-t .three-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+
+
+.wrapper .nav .xo .tab-body .b .a-x{
+	width:1100px;
+	height:300px;}
+
+.wrapper .nav .xo .tab-body .b .a-x .a-x-one{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-one .a-x-one-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .b .a-x .a-x-one .a-x-one-t .one-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/必胜客2.0.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-one .a-x-one-t .one-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-one .a-x-one-t .one-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-one .a-x-one-t .one-price-l {
+	width:25px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-one .a-x-one-t .one-price-o {
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-one .a-x-one-t .one-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .b .a-x .a-x-two{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-two .a-x-two-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .b .a-x .a-x-two .a-x-two-t .two-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/皇冠蛋糕2.0.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-two .a-x-two-t .two-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-two .a-x-two-t .two-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-two .a-x-two-t .two-price-l {
+	width:35px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-two .a-x-two-t .two-price-o{
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-two .a-x-two-t .two-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+	
+.wrapper .nav .xo .tab-body .b .a-x .a-x-three{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-three .a-x-three-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .b .a-x .a-x-three .a-x-three-t .three-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/料理.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-three .a-x-three-t .three-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-three .a-x-three-t .three-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-three .a-x-three-t .three-price-l {
+	width:35px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-three .a-x-three-t .three-price-o{
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .b .a-x .a-x-three .a-x-three-t .three-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+.wrapper .nav .xo .tab-body .c{
+	width:1100px;
+	height:640px;			
+	margin-top:10px;}
+	
+.wrapper .nav .xo .tab-body .c .a-s{
+	width:1100px;
+	height:300px;}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-one{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-one .a-s-one-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .c .a-s .a-s-one .a-s-one-t .one-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/椰岛造型.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-one .a-s-one-t .one-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-one .a-s-one-t .one-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-one .a-s-one-t .one-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-one .a-s-one-t .one-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .c .a-s .a-s-two{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-two .a-s-two-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .c .a-s .a-s-two .a-s-two-t .two-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/古夫.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-two .a-s-two-t .two-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-two .a-s-two-t .two-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-two .a-s-two-t .two-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-two .a-s-two-t .two-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+	
+.wrapper .nav .xo .tab-body .c .a-s .a-s-three{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-three .a-s-three-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .c .a-s .a-s-three .a-s-three-t .three-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/椰岛美容.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-three .a-s-three-t .three-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-three .a-s-three-t .three-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-three .a-s-three-t .three-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-s .a-s-three .a-s-three-t .three-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+
+
+.wrapper .nav .xo .tab-body .c .a-x{
+	width:1100px;
+	height:300px;}
+
+.wrapper .nav .xo .tab-body .c .a-x .a-x-one{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-one .a-x-one-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .c .a-x .a-x-one .a-x-one-t .one-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/美甲.png');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-one .a-x-one-t .one-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-one .a-x-one-t .one-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-one .a-x-one-t .one-price-l {
+	width:35px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-one .a-x-one-t .one-price-o {
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-one .a-x-one-t .one-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .c .a-x .a-x-two{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-two .a-x-two-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .c .a-x .a-x-two .a-x-two-t .two-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/理发.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-two .a-x-two-t .two-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-two .a-x-two-t .two-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-two .a-x-two-t .two-price-l {
+	width:35px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-two .a-x-two-t .two-price-o{
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-two .a-x-two-t .two-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+.wrapper .nav .xo .tab-body .c .a-x .a-x-three{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-three .a-x-three-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .c .a-x .a-x-three .a-x-three-t .three-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/跳舞.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-three .a-x-three-t .three-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-three .a-x-three-t .three-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-three .a-x-three-t .three-price-l {
+	width:40px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-three .a-x-three-t .three-price-o{
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .c .a-x .a-x-three .a-x-three-t .three-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+	
+		
+	
+.wrapper .nav .xo .tab-body .d{
+	width:1100px;
+	height:640px;			
+	margin-top:10px;}
+	
+.wrapper .nav .xo .tab-body .d .a-s{
+	width:1100px;
+	height:300px;}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-one{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-one .a-s-one-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .d .a-s .a-s-one .a-s-one-t .one-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/酒店1.0.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-one .a-s-one-t .one-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-one .a-s-one-t .one-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-one .a-s-one-t .one-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-one .a-s-one-t .one-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .d .a-s .a-s-two{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-two .a-s-two-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .d .a-s .a-s-two .a-s-two-t .two-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/酒店2.0.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-two .a-s-two-t .two-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-two .a-s-two-t .two-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-two .a-s-two-t .two-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-two .a-s-two-t .two-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+.wrapper .nav .xo .tab-body .d .a-s .a-s-three{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-three .a-s-three-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .d .a-s .a-s-three .a-s-three-t .three-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/酒店3.0.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-three .a-s-three-t .three-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-three .a-s-three-t .three-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-three .a-s-three-t .three-price-l{
+	width:50%;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-s .a-s-three .a-s-three-t .three-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .d .a-x{
+	width:1100px;
+	height:300px;}
+
+.wrapper .nav .xo .tab-body .d .a-x .a-x-one{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-one .a-x-one-t{
+	margin:5px;
+
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .d .a-x .a-x-one .a-x-one-t .one-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/酒店4.0.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-one .a-x-one-t .one-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-one .a-x-one-t .one-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-one .a-x-one-t .one-price-l {
+	width:40px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-one .a-x-one-t .one-price-o {
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-one .a-x-one-t .one-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+.wrapper .nav .xo .tab-body .d .a-x .a-x-two{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-two .a-x-two-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .d .a-x .a-x-two .a-x-two-t .two-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/酒店5.0.png');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-two .a-x-two-t .two-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-two .a-x-two-t .two-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-two .a-x-two-t .two-price-l {
+	width:35px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-two .a-x-two-t .two-price-o{
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-two .a-x-two-t .two-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+	
+	
+.wrapper .nav .xo .tab-body .d .a-x .a-x-three{
+	width:360px;
+	height:300px;
+	float:left;}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-three .a-x-three-t{
+	margin:5px;
+	width:345px;
+	height:285px;
+	border-radius:10px;
+	overflow:hidden;}	
+.wrapper .nav .xo .tab-body .d .a-x .a-x-three .a-x-three-t .three-photo{
+	width:345px;
+	height:70%;
+	background:url('./素材/酒店6.0.jpg');
+	background-size:100% 100%;
+	border-radius:10px;
+	overflow:hidden;}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-three .a-x-three-t .three-title{
+	color:#000;
+	width:345px;
+	height:10%;
+	font-size:18px;
+	font-weight:700;
+	margin-top:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-three .a-x-three-t .three-syn{
+	width:345px;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-three .a-x-three-t .three-price-l {
+	width:40px;
+	height:10%;
+	font-size:18px;
+	color:#FC3;
+	float:left;
+	margin-left:5px;
+	position:relative;/*基于自身定位*/
+	bottom:5px;
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-three .a-x-three-t .three-price-o{
+	width:100px;
+	height:10%;
+	font-size:13px;
+	float:left;
+	margin-left:5px;
+	color: #999;
+	text-decoration: line-through;
+	
+	}
+.wrapper .nav .xo .tab-body .d .a-x .a-x-three .a-x-three-t .three-price-r{
+	width:28%;
+	height:10%;
+	font-size:10px;
+	color:#999;
+	float:right;
+	}
+
+
+
+
+
+
+.wrapper .end{
+	width:1100px;
+	height:400px;
+	margin-top:150px;
+	border-top:1px solid #999;
+	}
+.wrapper .end .end-o{
+	width:230px;
+	height:350px;
+	float:left;
+	margin:20px;}
+.wrapper .end .end-t{
+	width:230px;
+	height:350px;
+	float:left;
+	margin:20px;}
+.wrapper .end .end-s{
+	width:230px;
+	height:350px;
+	float:left;
+	margin:20px;}
+.wrapper .end .end-f{
+	width:230px;
+	height:350px;
+	float:left;
+	margin:20px;}
+.wrapper .end li{
+	margin-top:10px;
+	margin-left:20px;
+	color:#333;
+	cursor:pointer;
+	}
+.wrapper .end li:hover{
+	color:#13b1be;}
